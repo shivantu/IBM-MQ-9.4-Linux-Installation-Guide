@@ -1,0 +1,23 @@
+# Switch to root
+sudo su -
+
+# Extract package (if downloaded as tar.gz)
+gunzip IBM_MQ_9.4_LINUX_X86-64.tar.gz
+tar -xvf IBM_MQ_9.4_LINUX_X86-64.tar
+
+cd MQServer    # directory where RPMs reside
+
+# License acceptance (optional before install)
+./mqlicense.sh -text_only
+
+# Import signing key (optional)
+rpm --import ibm_mq_public.pgp
+
+# Install packages
+rpm -ivh MQSeriesRuntime-*.rpm MQSeriesServer-*.rpm MQSeriesGSKit-*.rpm
+
+# Set as primary installation (if needed)
+/opt/mqm/bin/setmqinst -i -p /opt/mqm
+
+# Verify installation
+dspmqver
