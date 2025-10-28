@@ -17,58 +17,58 @@ This repository provides the installation guide for IBM MQ 9.4 on Linux systems.
 
 ## 1. Extract Installation Package
 
-|gunzip MQServer.tar.gz|
-|tar -xvf MQServer.tar|
+- gunzip MQServer.tar.gz
+- tar -xvf MQServer.tar
 
 ## Navigate to Installation Directory
 
-cd MQServer
+- cd MQServer
 
 ## Accept License
 
-./mqlicense.sh
+- ./mqlicense.sh
 
 ## OR Text-only mode
 
-./mqlicense.sh -text_only
+- ./mqlicense.sh -text_only
 
 ## Import IBM MQ Public Signing Key (Optional but Recommended)
 
-rpm --import ibm_mq_public.pgp
+- rpm --import ibm_mq_public.pgp
 
-rpm -Kv MQSeriesRuntime-9.4*.rpm
+-rpm -Kv MQSeriesRuntime-9.4*.rpm
 
 ## Install RPM Packages
 
 ## Standard installation
 
-rpm -ivh MQSeriesRuntime-*.rpm MQSeriesServer-*.rpm MQSeriesGSKit-*.rpm MQSeries*.rpm
+- rpm -ivh MQSeriesRuntime-*.rpm MQSeriesServer-*.rpm MQSeriesGSKit-*.rpm MQSeries*.rpm
 
 ## Custom installation path
 
-rpm --prefix /opt/customLocation -ivh MQSeriesRuntime-*.rpm MQSeriesServer-*.rpm MQSeriesGSKit-*.rpm MQSeries*.rpm
+- rpm --prefix /opt/customLocation -ivh MQSeriesRuntime-*.rpm MQSeriesServer-*.rpm MQSeriesGSKit-*.rpm MQSeries*.rpm
 
 ## Set Primary Installation
 
-/opt/mqm/bin/setmqinst -i -p /opt/mqm
+- /opt/mqm/bin/setmqinst -i -p /opt/mqm
 
 ## For custom installation path
 
-/opt/customLocation/bin/setmqinst -i -p /opt/customLocation
+- /opt/customLocation/bin/setmqinst -i -p /opt/customLocation
 
 
 ## ✅ Post-installation & Verification
 
-User and Group Setup
-Create user group mqm and add your admin user if not done automatically
-Ensure administration privileges are configured
+- User and Group Setup
+- Create user group mqm and add your admin user if not done automatically
+- Ensure administration privileges are configured
 
 ## Environment Setup
 
 ## Set MQ environment
 
-. /opt/mqm/bin/setmqenv -m QMGR_NAME
+- . /opt/mqm/bin/setmqenv -m QMGR_NAME
 
 ## Verification
 
-dspmqver
+- dspmqver
