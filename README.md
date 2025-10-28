@@ -36,7 +36,7 @@ This repository provides the installation guide for IBM MQ 9.4 on Linux systems.
 
 - rpm --import ibm_mq_public.pgp
 
--rpm -Kv MQSeriesRuntime-9.4*.rpm
+- rpm -Kv MQSeriesRuntime-9.4*.rpm
 
 ## Install RPM Packages
 
