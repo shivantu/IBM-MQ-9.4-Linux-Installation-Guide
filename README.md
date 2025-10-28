@@ -17,7 +17,7 @@ This repository provides the installation guide for IBM MQ 9.4 on Linux systems.
 
 #### 1. Extract Installation Package
 
-gunzip MQServer.tar.gz
+** gunzip MQServer.tar.gz
 tar -xvf MQServer.tar
 
 ### Navigate to Installation Directory
