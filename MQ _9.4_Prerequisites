@@ -1,0 +1,17 @@
+# IBM MQ 9.4 Prerequisites
+
+## System Requirements
+
+### Supported Operating Systems
+- Red Hat Enterprise Linux 7.x, 8.x, 9.x
+- SUSE Linux Enterprise Server 12.x, 15.x
+- Ubuntu 18.04, 20.04, 22.04
+
+### Hardware Requirements
+- Minimum 2GB RAM (4GB recommended)
+- 2GB disk space for installation
+- Additional space for queue data and logs
+
+### Software Requirements
+- MQ Software
+- Fix pack 
