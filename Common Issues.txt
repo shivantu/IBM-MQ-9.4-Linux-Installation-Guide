@@ -1,0 +1,15 @@
+# Troubleshooting Guide
+
+## Common Issues
+
+### License Acceptance Failed
+- Ensure you're running as root
+- Use `./mqlicense.sh -text_only` for non-interactive mode
+
+### RPM Dependency Errors
+- Install required dependencies: `yum install libstdc++-devel`
+- Check RPM database: `rpm --rebuilddb`
+
+### Permission Denied
+- Add user to mqm group: `usermod -a -G mqm $USER`
+- Log out and log back in after group changes
