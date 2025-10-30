@@ -2,6 +2,9 @@
 
 This repository provides the installation guide for IBM MQ 9.4 on Linux systems.
 
+---
+© 2025 Shivaraj — All Rights Reserved.  
+
 ## 📋 Prerequisites
 
 ### ✅ Pre-installation Requirements
@@ -72,3 +75,10 @@ This repository provides the installation guide for IBM MQ 9.4 on Linux systems.
 ## Verification
 
 - dspmqver
+
+## 📞 Contact
+- shivaraj
+- shivantu9@gmail.com
+- For questions or contributions, please reach out via GitHub issues.
+
+---
